@@ -1,0 +1,346 @@
+body {
+    font-family: "Montserrat", serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button {
+    border-radius: 5px;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .15s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+
+    &--first-screen {
+        padding: 20px 25px;
+        background: #e0d5c8bf;
+        border-radius: 100px;
+        font-size: 16px;
+    }
+
+    &--order {
+        background: none;
+        border: 1px solid #000;
+        transition: background .3s color .3s;
+        
+        &:hover {
+            background: #000;
+            color: #fff;
+            transform: scale(1);
+        }
+
+        &:active {
+            transform: scale(.95);
+        }
+    }
+}
+
+.container-padding {
+    padding: 60px 0;
+}
+
+.container-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: .15s;
+
+    &:hover {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.header {
+    background: #102248;
+    color: #fff;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__logo {}
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #ffffffea;
+                font-size: 18px;
+
+                &:hover {
+                    color: #ffffffa2;
+                    border-bottom: 1px solid #ffffffa2;
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__contacts {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+
+        a {
+            width: fit-content;
+            color: #ffffffea;
+            text-align: right;
+
+            &:hover {
+                color: #ffffffa2;
+            }
+        }
+        
+        p {
+            text-align: right;
+            // font-size: 18px;
+        }
+    }
+}
+
+.first-screen {
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    
+    &__left {
+        width: 40%;
+        height: 100%;
+
+        padding: 45px 65px;
+
+        background: url("/src/assets/photos/first-screen.png") center no-repeat;
+        background-size: cover;
+    }
+
+    &__text {
+        padding: 25px 15px;
+        background: #e0d5c8bf;
+        border-radius: 20px;
+        text-align: center;
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    &__right {
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+
+        background: #383A41;
+        text-align: center;
+        color: #fff;
+
+        h2 {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 52px;
+        }
+
+        p {
+            color: #ffffffea;
+            max-width: 662px;
+            font-size: 24px;
+        }
+    }
+}
+
+.masters {
+    background: #5A5A5A;
+
+    &__title {
+        margin-bottom: 47px;
+        color: #fff;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        .item-img {
+            border-radius: 15px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+        }
+
+        .item-name {
+            margin-top: 20px;
+
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+.certificates {
+    &__row {
+        margin-top: 66px;
+
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+
+    &__text {
+        font-size: 32px;
+        font-weight: 500;
+        text-wrap: balance;
+    }
+
+    &__right {}
+}
+
+.about {
+    background: #5A5A5A;
+    color: #fff;
+
+    &__row {
+        height: 500px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        max-width: 772px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__par {
+        font-size: 20px;
+    }
+
+    &__right {
+        width: 600px;
+        height: 100%;
+        
+        background: #000;
+
+        &::after {
+            content: "Здесь будет карта";
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.footer {
+    padding: 15px 0;
+    background: #000;
+    color: #fff;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        a {
+            width: fit-content;
+        }
+    }
+
+    &__contacts-item {
+        position: relative;
+    }
+}
