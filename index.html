@@ -2,23 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>С душой к телу</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <div class="header__left">
-                <img class="header__logo" src="/src/assets/icons/logo.svg" alt="">
-    
-                <nav class="header__nav">
+<header class="header">
+    <div class="container header__container">
+        <div class="header__left">
+            <img class="header__logo" src="/src/assets/icons/logo.svg" alt="">
+
+            <div class="header__contacts">
+                <a href="tel:79998451105">+7 (999) 845-11-05</a>
+                <p>ул. 43-й Армии, 17</p>
+            </div>
+        </div>
+
+        <div class="header__center">
+            <nav>
+                <ul class="header__nav">
                     <li>
                         <a href="#services">Услуги студии</a>
                     </li>
@@ -34,483 +43,588 @@
                     <li>
                         <a href="#about">О студии</a>
                     </li>
-                </nav>
-            </div>
-    
-            <div class="header__right">
-                <div class="header__contacts">
-                    <a href="tel:79998451105">+7 (999) 845-11-05</a>
-                    <p>ул. 43-й Армии, 17</p>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right">
+            <button class="button">Записаться</button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="first-screen">
+        <img src="src/assets/photos/first_4.jpg" alt=""/>
+
+        <div class="first-screen__main">
+            <div class="container first-screen__main-container">
+                <div class="first-screen__text">
+                    <span>Студия массажа в Подольске</span>
+
+                    <h1>«С душой к телу»</h1>
+
+                    <p>
+                        Верните себе приятную легкость и насладитесь свободой движений! <br>
+                        Наша студия массажа поможет вам избавиться от отеков, боли и спазмов
+                    </p>
+
+                    <button class="button button--first-screen">Записаться на массаж</button>
                 </div>
-                
-                <button class="button">Записаться</button>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="main">
-        <section class="first-screen">
-            <div class="first-screen__main">
-                <div class="container first-screen__main-container">
-                    <div class="first-screen__text">
-                        <h1>Студия массажа «С душой к телу»</h1>
-    
-                        <p>
-                            Верните себе приятную легкость и насладитесь свободой движений! <br>
-                            Наша студия массажа поможет вам избавиться от отеков, боли и спазмов
-                        </p>
-                    </div>
+    <section>
+        <div class="promo">
+            <div class="container promo__container">
+                <div class="promo__text">
+                    <h2>«Первое знакомство» со студией по <br> специальной цене*</h2>
+
+                    <button class="button button--first-screen">Записаться на массаж</button>
+                </div>
+
+                <p>*Акция действительна для новых клиентов студии и распространяется на все виды услуг</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services container-padding" id="services">
+        <div class="container services__container">
+            <h2 class="services__title container-title">Наши услуги</h2>
+
+            <div class="services__wrapper">
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img classic"></div>
+
+                    <h2>Классический массаж</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img anti-cellulite"></div>
+
+                    <h2>Антицеллюлитный/лимфодренажный массаж</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img classic-face"></div>
+
+                    <h2>Классический массаж лица</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img hand-face"></div>
+
+                    <h2>Ручная пластика лица</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img mega-sculptor"></div>
+
+                    <h2>МЕГАскульптор</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img wrapping"></div>
+
+                    <h2>Обертывание</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img i-shoke"></div>
+
+                    <h2>iShoke</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img apparatus"></div>
+
+                    <h2>Аппаратный массаж</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img tapes"></div>
+
+                    <h2>Тейпы</h2>
+                </div>
+
+                <div class="services__card classic" data-modal-type="service-1">
+                    <div class="services__card-img barrel"></div>
+
+                    <h2>Фитобочка</h2>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div class="first-screen__bottom">
-                <div class="container first-screen__bottom-container">
-                    <h2>«Первое знакомство» со студией по специальной цене*</h2>
-                    
-                    <p>*Акция действительна для новых клиентов студии и распространяется на все виды услуг</p>
-                    
-                    <button class="button button--order">Записаться  на массаж</button>
+<!--            <div class="services__group">-->
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img classic"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>Классический массаж</h2>-->
+<!--                        <p>-->
+<!--                            Мы предлагаем индивидуальный подход к каждому клиенту: наша команда профессионалов подберет-->
+<!--                            курс массажа, основываясь на Ваших жалобах и предпочтениях.-->
+<!--                            Специалист проведет диагностику, внимательно анализируя ваш образ жизни, неприятные симптомы-->
+<!--                            и жалобы.-->
+<!--                            Забудьте о боли и дискомфорте — подарите себе комфорт и расслабление, которые Вы-->
+<!--                            заслуживаете!-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>40 мин - 2600</span>-->
+<!--                                    <span>60 мин – 2900</span>-->
+<!--                                    <span>90 мин - 3700</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>На 5 сеансов</span>-->
+<!--                                    <span>40 мин - 12000 (2400*)</span>-->
+<!--                                    <span>60 мин – 13750 (2750*)</span>-->
+<!--                                    <span>90 мин - 17500 (3500*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 10 сеансов</span>-->
+<!--                                    <span>40 мин - 22000 (2400*)</span>-->
+<!--                                    <span>60 мин – 25000 (2500*)</span>-->
+<!--                                    <span>90 мин - 33000 (3300*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 15 сеансов</span>-->
+<!--                                    <span>40 мин - 30000 (2000*)</span>-->
+<!--                                    <span>60 мин – 34500 (2300*)</span>-->
+<!--                                    <span>90 мин - 56500 (3100*)</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img anti-cellulite"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>Антицеллюлитный/лимфодренажный массаж</h2>-->
+<!--                        <p>-->
+<!--                            Антицеллюлитный массаж — это ваша надежная и эффективная поддержка в борьбе с целлюлитом и-->
+<!--                            отечностью! Благодаря профессиональному подходу и грамотной технике вы сможете добиться-->
+<!--                            потрясающих результатов всего за несколько сеансов.-->
+<!--                            Не упускайте возможность вернуть своей коже гладкость и упругость!-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>40 мин - 2600</span>-->
+<!--                                    <span>60 мин – 2900</span>-->
+<!--                                    <span>90 мин - 3700</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>На 5 сеансов</span>-->
+<!--                                    <span>40 мин - 12000 (2400*)</span>-->
+<!--                                    <span>60 мин – 13750 (2750*)</span>-->
+<!--                                    <span>90 мин - 17500 (3500*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 10 сеансов</span>-->
+<!--                                    <span>40 мин - 22000 (2400*)</span>-->
+<!--                                    <span>60 мин – 25000 (2500*)</span>-->
+<!--                                    <span>90 мин - 33000 (3300*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 15 сеансов</span>-->
+<!--                                    <span>40 мин - 30000 (2000*)</span>-->
+<!--                                    <span>60 мин – 34500 (2300*)</span>-->
+<!--                                    <span>90 мин - 56500 (3100*)</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img classic-face"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>Классический массаж лица</h2>-->
+<!--                        <p>-->
+<!--                            Наш классический массаж лица — это великолепная методика, которая замедляет естественный-->
+<!--                            процесс старения и подходит для любого возраста. Вы почувствуете, как Ваша кожа становится-->
+<!--                            более эластичной и упругой, улучшится микроциркуляция крови, которая поможет разгладить-->
+<!--                            морщины и выровнять цвет лица.-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>40 мин - 2600</span>-->
+<!--                                    <span>60 мин – 2900</span>-->
+<!--                                    <span>90 мин - 3700</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span></span>-->
+<!--                                    <span>420 мин - 18200</span>-->
+<!--                                    <span>180 мин – 8400</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img hand-face"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>Ручная пластика лица</h2>-->
+<!--                        <p>-->
+<!--                            Откройте для себя магию ручной пластики лица!-->
+<!--                            Это уникальное сочетание различных методик, направленное на восстановление и сохранение-->
+<!--                            Вашей молодости.-->
+<!--                            После сеанса Вы почувствуете, как напряженные мышцы расслабляются и увидите результат уже-->
+<!--                            после первого сеанса-->
+<!--                            Подарите себе этот опыт, раскройте свою истинную красоту и наслаждайтесь результатами-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>40 мин - 2600</span>-->
+<!--                                    <span>60 мин – 2900</span>-->
+<!--                                    <span>90 мин - 3700</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>На 5 сеансов</span>-->
+<!--                                    <span>40 мин - 12000 (2400*)</span>-->
+<!--                                    <span>60 мин – 13750 (2750*)</span>-->
+<!--                                    <span>90 мин - 17500 (3500*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 10 сеансов</span>-->
+<!--                                    <span>40 мин - 22000 (2400*)</span>-->
+<!--                                    <span>60 мин – 25000 (2500*)</span>-->
+<!--                                    <span>90 мин - 33000 (3300*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 15 сеансов</span>-->
+<!--                                    <span>40 мин - 30000 (2000*)</span>-->
+<!--                                    <span>60 мин – 34500 (2300*)</span>-->
+<!--                                    <span>90 мин - 56500 (3100*)</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img mega-sculptor"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>МЕГАскульптор</h2>-->
+<!--                        <p>-->
+<!--                            Начните свой путь к идеальной фигуре с корректирующим массажем на липомоделирующем кремовом-->
+<!--                            масло "Мегаскульптор«. Этот эффективный массаж позволит Вам всего за один сеанс избавиться-->
+<!--                            от 2 до 4 сантиметров на бедрах и животе. Улучшите тонус кожи и скажите "прощай" целлюлиту!-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>??? мин - 5000</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>На 5 сеансов</span>-->
+<!--                                    <span>24000 (4800*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 10 сеансов</span>-->
+<!--                                    <span>45000 (4500*)</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img wrapping"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>Обертывание</h2>-->
+<!--                        <p>-->
+<!--                            Откройте для себя мощь обертывания!-->
+<!--                            Наши обертывания обеспечивают потрясающие результаты: существенное сокращение объемов тела,-->
+<!--                            уменьшение целлюлита, улучшение кровообращения и лифтинг кожи! Комбинируйте обертывания с-->
+<!--                            массажными процедурами, и Ваше тело ответит невероятной благодарностью! Такой симбиоз-->
+<!--                            ускоряет процесс похудения и позволяет быстрее добиться желаемых результатов.-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>??? мин - 2000</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>На 5 сеансов</span>-->
+<!--                                    <span>7500 (1500*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 10 сеансов</span>-->
+<!--                                    <span>13000 (1300*)</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item">-->
+<!--                    <div class="services__item-img i-shoke"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>iShoke</h2>-->
+<!--                        <p>-->
+<!--                            Погрузитесь в мир ухода за собой с уникальной гель-сывороткой iShoke и термоодеялом! На-->
+<!--                            первом этапе мы нанесем гель-сыворотку на проблемные зоны, чтобы запустить процесс-->
+<!--                            избавления от лишних сантиметров. В дополнение вас ждет антицеллюлитный массаж, который-->
+<!--                            обеспечит максимальный эффект!-->
+<!--                            Гель-сыворотка активно борется с застоями и жировыми отложениями и результаты не заставят-->
+<!--                            себя ждать: уходят лишние сантиметры, кожа становится подтянутой и увлажненной, видимость-->
+<!--                            целлюлита уменьшается, восстанавливая вашу уверенность в себе.-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <h3>Абонементы</h3>-->
+
+<!--                            <div class="services__item-prices-group">-->
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>Разовое посещение</span>-->
+<!--                                    <span>120 мин - 4500</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>На 5 сеансов</span>-->
+<!--                                    <span>21000 (4300*)</span>-->
+<!--                                </div>-->
+
+<!--                                <div class="services__item-prices-item">-->
+<!--                                    <span>на 10 сеансов</span>-->
+<!--                                    <span>41000 (4100*)</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item services__item&#45;&#45;apparatus">-->
+<!--                    <div class="services__item-img apparatus"></div>-->
+
+<!--                    <div class="services__item-text">-->
+<!--                        <h2>Аппаратный массаж</h2>-->
+
+<!--                        <h3>Массаж Эндосфера:</h3>-->
+<!--                        <p>-->
+<!--                            Endospheres Therapy – это современная итальянская технология для моделирования контуров тела-->
+<!--                            и борьбы с целлюлитом, с помощью метода компрессионной микровибрации для улучшения-->
+<!--                            лимфатического дренажа и кровообращения. Аппарат создает нежную компрессию, что позволяет-->
+<!--                            эффективно выводить лишнюю жидкость и уменьшать объемы тела сразу на 2 размера. Эта методика-->
+<!--                            способна значительно улучшить состояние кожи и облегчить ощущения после физической-->
+<!--                            активности. С правильным образом жизни результаты сохраняются надолго.-->
+<!--                        </p>-->
+
+<!--                        <h3>LPG-массаж:</h3>-->
+<!--                        <p>-->
+<!--                            LPG-массаж – это высокоэффективная аппаратная методика для коррекции фигуры и лица,-->
+<!--                            основанная на вакуумно-роликовом воздействии. Она стимулирует метаболизм в подкожных жировых-->
+<!--                            клетках, улучшает микроциркуляцию и лимфоток, а также способствует размягчению жировых-->
+<!--                            отложений. Метод активирует фибробласты, увеличивая выработку коллагена и эластина, что-->
+<!--                            делает кожу упругой и эластичной. LPG-массаж борется с целлюлитом, избавляет от отечности и-->
+<!--                            улучшает контуры тела. Идеально подходит для эстетических, терапевтических и спортивных-->
+<!--                            целей.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="services__item services__item&#45;&#45;combined">-->
+<!--                    <div class="services__item-text tapes">-->
+<!--                        <h2>Тейпы</h2>-->
+<!--                        <p>-->
+<!--                            Тейпы идеально подходят для использования при травмах, растяжениях, остеохондрозе и болевых-->
+<!--                            ощущениях во время реабилитации. Они ускоряют процесс выздоровления без необходимости-->
+<!--                            прибегать к обезболивающим средствам.-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <div class="services__item-prices-item">-->
+<!--                                <span></span>-->
+<!--                                <span>Аппликация - 700</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="services__item-text fito">-->
+<!--                        <h2>Фитобочка</h2>-->
+<!--                        <p>-->
+<!--                            Откройте для себя идеальное сочетание кедрового дерева, влажного пара и фитосбора!-->
+<!--                            Насладитесь комплексным воздействием на Ваш организм: быстро и комфортно избавьтесь от-->
+<!--                            усталости, стресса и нервного напряжения, восполните запас энергии и зарядитесь-->
+<!--                            положительным настроением. Подарите себе мгновения истинного расслабления и восстановления-->
+<!--                        </p>-->
+
+<!--                        <div class="services__item-prices">-->
+<!--                            <div class="services__item-prices-item">-->
+<!--                                <span></span>-->
+<!--                                <span>1 сеанс - 700 (600*)</span>-->
+<!--                                <span class="services__item-prices-annotation">*при покупке любого абонемента на курс массажа</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="services__item-img combined"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </section>
+
+    <section class="certificates container-padding" id="certificates">
+        <div class="container certificates__container">
+            <h2 class="certificates__title container-title">СЕРТИФИКАТЫ</h2>
+
+            <div class="certificates__row">
+                <div class="certificates__left">
+                    <p class="certificates__text">
+                        Хотите сделать незабываемый подарок? Подарочный сертификат – идеальный выбор!
+                        С ним ваши друзья и близкие смогут выбрать то, что им действительно нужно и понравится.
+                    </p>
+
+                    <button class="button button--order">Заказать сертификат</button>
+                </div>
+
+                <div class="certificates__right">
+                    <img src="/src/assets/photos/cert.png" alt="">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="services container-padding" id="services">
-            <div class="container services__container">
-                <h2 class="services__title container-title">Наши услуги</h2>
+    <section class="masters container-padding" id="masters">
+        <div class="container masters__container">
+            <h2 class="masters__title container-title">Наши мастера</h2>
 
-                <div class="services__group">
-                    <div class="services__item">
-                        <div class="services__item-img classic"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>Классический массаж</h2>
-                            <p>
-                                Мы предлагаем индивидуальный подход к каждому клиенту: наша команда профессионалов подберет курс массажа, основываясь на Ваших жалобах и предпочтениях.
-                                Специалист проведет диагностику, внимательно анализируя ваш образ жизни, неприятные симптомы и жалобы. 
-                                Забудьте о боли и дискомфорте — подарите себе комфорт и расслабление, которые Вы заслуживаете! 
-                            </p>
+            <div class="masters__items">
+                <div class="masters__item" data-modal-type="master-1">
+                    <img class="item-img" src="/src/assets/photos/masters/kassia.jpg" alt="">
 
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
+                    <p class="item-name">Кассия</p>
+                </div>
+                <div class="masters__item" data-modal-type="master-2">
+                    <img class="item-img" src="/src/assets/photos/masters/igor.jpg" alt="">
 
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>40 мин - 2600</span>
-                                        <span>60 мин – 2900</span>
-                                        <span>90 мин - 3700</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>На 5 сеансов</span>
-                                        <span>40 мин - 12000 (2400*)</span>
-                                        <span>60 мин – 13750 (2750*)</span>
-                                        <span>90 мин - 17500 (3500*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 10 сеансов</span>
-                                        <span>40 мин - 22000 (2400*)</span>
-                                        <span>60 мин – 25000 (2500*)</span>
-                                        <span>90 мин - 33000 (3300*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 15 сеансов</span>
-                                        <span>40 мин - 30000 (2000*)</span>
-                                        <span>60 мин – 34500 (2300*)</span>
-                                        <span>90 мин - 56500 (3100*)</span>
-                                    </div>
-                                </div>
+                    <p class="item-name">Игорь</p>
+                </div>
+                <div class="masters__item" data-modal-type="master-3">
+                    <img class="item-img" src="/src/assets/photos/masters/kamil.jpg" alt="">
 
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item">
-                        <div class="services__item-img anti-cellulite"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>Антицеллюлитный/лимфодренажный массаж</h2>
-                            <p>
-                                Антицеллюлитный массаж — это ваша надежная и эффективная поддержка в борьбе с целлюлитом и отечностью! Благодаря профессиональному подходу и грамотной технике вы сможете добиться потрясающих результатов всего за несколько сеансов.
-                                Не упускайте возможность вернуть своей коже гладкость и упругость!  
-                            </p>
+                    <p class="item-name">Камиль</p>
+                </div>
+                <div class="masters__item" data-modal-type="master-4">
+                    <img class="item-img" src="/src/assets/photos/masters/michael.jpg" alt="">
 
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
-
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>40 мин - 2600</span>
-                                        <span>60 мин – 2900</span>
-                                        <span>90 мин - 3700</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>На 5 сеансов</span>
-                                        <span>40 мин - 12000 (2400*)</span>
-                                        <span>60 мин – 13750 (2750*)</span>
-                                        <span>90 мин - 17500 (3500*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 10 сеансов</span>
-                                        <span>40 мин - 22000 (2400*)</span>
-                                        <span>60 мин – 25000 (2500*)</span>
-                                        <span>90 мин - 33000 (3300*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 15 сеансов</span>
-                                        <span>40 мин - 30000 (2000*)</span>
-                                        <span>60 мин – 34500 (2300*)</span>
-                                        <span>90 мин - 56500 (3100*)</span>
-                                    </div>
-                                </div>
-
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item">
-                        <div class="services__item-img classic-face"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>Классический массаж лица</h2>
-                            <p>
-                                Наш классический массаж лица — это великолепная методика, которая замедляет естественный процесс старения и подходит для любого возраста. Вы почувствуете, как Ваша кожа становится более эластичной и упругой, улучшится микроциркуляция крови, которая поможет разгладить морщины и выровнять цвет лица.
-                            </p>
-
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
-
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>40 мин - 2600</span>
-                                        <span>60 мин – 2900</span>
-                                        <span>90 мин - 3700</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span></span>
-                                        <span>420 мин - 18200</span>
-                                        <span>180 мин – 8400</span>
-                                    </div>
-                                </div>
-
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item">
-                        <div class="services__item-img hand-face"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>Ручная пластика лица</h2>
-                            <p>
-                                Откройте для себя магию ручной пластики лица!
-                                Это уникальное сочетание различных методик, направленное на восстановление и сохранение Вашей молодости.
-                                После сеанса Вы почувствуете, как напряженные мышцы расслабляются и увидите результат уже после первого сеанса
-                                Подарите себе этот опыт, раскройте свою истинную красоту и наслаждайтесь результатами
-                            </p>
-
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
-
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>40 мин - 2600</span>
-                                        <span>60 мин – 2900</span>
-                                        <span>90 мин - 3700</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>На 5 сеансов</span>
-                                        <span>40 мин - 12000 (2400*)</span>
-                                        <span>60 мин – 13750 (2750*)</span>
-                                        <span>90 мин - 17500 (3500*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 10 сеансов</span>
-                                        <span>40 мин - 22000 (2400*)</span>
-                                        <span>60 мин – 25000 (2500*)</span>
-                                        <span>90 мин - 33000 (3300*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 15 сеансов</span>
-                                        <span>40 мин - 30000 (2000*)</span>
-                                        <span>60 мин – 34500 (2300*)</span>
-                                        <span>90 мин - 56500 (3100*)</span>
-                                    </div>
-                                </div>
-
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item">
-                        <div class="services__item-img mega-sculptor"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>МЕГАскульптор</h2>
-                            <p>
-                                Начните свой путь к идеальной фигуре с корректирующим массажем на липомоделирующем кремовом масло "Мегаскульптор«. Этот эффективный массаж позволит Вам всего за один сеанс избавиться от 2 до 4 сантиметров на бедрах и животе. Улучшите тонус кожи и скажите "прощай" целлюлиту!
-                            </p>
-
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
-
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>??? мин - 5000</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>На 5 сеансов</span>
-                                        <span>24000 (4800*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 10 сеансов</span>
-                                        <span>45000 (4500*)</span>
-                                    </div>
-                                </div>
-
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item">
-                        <div class="services__item-img wrapping"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>Обертывание</h2>
-                            <p>
-                                Откройте для себя мощь обертывания!
-                                Наши обертывания обеспечивают потрясающие результаты: существенное сокращение объемов тела, уменьшение целлюлита, улучшение кровообращения и лифтинг кожи! Комбинируйте обертывания с массажными процедурами, и Ваше тело ответит невероятной благодарностью! Такой симбиоз ускоряет процесс похудения и позволяет быстрее добиться желаемых результатов.                                    
-                            </p>
-
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
-
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>??? мин - 2000</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>На 5 сеансов</span>
-                                        <span>7500 (1500*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 10 сеансов</span>
-                                        <span>13000 (1300*)</span>
-                                    </div>
-                                </div>
-
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item">
-                        <div class="services__item-img i-shoke"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>iShoke</h2>
-                            <p>
-                                Погрузитесь в мир ухода за собой с уникальной гель-сывороткой iShoke и термоодеялом! На первом этапе мы нанесем гель-сыворотку на проблемные зоны, чтобы запустить процесс избавления от лишних сантиметров. В дополнение вас ждет антицеллюлитный массаж, который обеспечит максимальный эффект! 
-                                Гель-сыворотка активно борется с застоями и жировыми отложениями и результаты не заставят себя ждать: уходят лишние сантиметры, кожа становится подтянутой и увлажненной,  видимость целлюлита уменьшается, восстанавливая вашу уверенность в себе.
-                            </p>
-
-                            <div class="services__item-prices">
-                                <h3>Абонементы</h3>
-
-                                <div class="services__item-prices-group">
-                                    <div class="services__item-prices-item">
-                                        <span>Разовое посещение</span>
-                                        <span>120 мин - 4500</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>На 5 сеансов</span>
-                                        <span>21000 (4300*)</span>
-                                    </div>
-                                    
-                                    <div class="services__item-prices-item">
-                                        <span>на 10 сеансов</span>
-                                        <span>41000 (4100*)</span>
-                                    </div>
-                                </div>
-
-                                <p class="services__item-prices-annotation">*цена за один сеанс при покупке абонемента</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="services__item services__item--apparatus">
-                        <div class="services__item-img apparatus"></div>
-                        
-                        <div class="services__item-text">
-                            <h2>Аппаратный массаж</h2>
-
-                            <h3>Массаж Эндосфера:</h3>
-                            <p>
-                                Endospheres Therapy – это современная итальянская технология для моделирования контуров тела и борьбы с целлюлитом, с помощью метода компрессионной микровибрации для улучшения лимфатического дренажа и кровообращения. Аппарат создает нежную компрессию, что позволяет эффективно выводить лишнюю жидкость и уменьшать объемы тела сразу на 2 размера. Эта методика способна значительно улучшить состояние кожи и облегчить ощущения после физической активности. С правильным образом жизни результаты сохраняются надолго.
-                            </p>
-
-                            <h3>LPG-массаж:</h3>
-                            <p>
-                                LPG-массаж – это высокоэффективная аппаратная методика для коррекции фигуры и лица, основанная на вакуумно-роликовом воздействии. Она стимулирует метаболизм в подкожных жировых клетках, улучшает микроциркуляцию и лимфоток, а также способствует размягчению жировых отложений. Метод активирует фибробласты, увеличивая выработку коллагена и эластина, что делает кожу упругой и эластичной. LPG-массаж борется с целлюлитом, избавляет от отечности и улучшает контуры тела. Идеально подходит для эстетических, терапевтических и спортивных целей.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="services__item services__item--combined">                        
-                        <div class="services__item-text tapes">
-                            <h2>Тейпы</h2>
-                            <p>
-                                Тейпы идеально подходят для использования при травмах, растяжениях, остеохондрозе и болевых ощущениях во время реабилитации. Они ускоряют процесс выздоровления без необходимости прибегать к обезболивающим средствам.    
-                            </p>
-
-                            <div class="services__item-prices">
-                                <div class="services__item-prices-item">
-                                    <span></span>
-                                    <span>Аппликация - 700</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="services__item-text fito">
-                            <h2>Фитобочка</h2>
-                            <p>
-                                Откройте для себя идеальное сочетание кедрового дерева, влажного пара и фитосбора! Насладитесь комплексным воздействием на Ваш организм: быстро и комфортно избавьтесь от усталости, стресса и нервного напряжения, восполните запас энергии и зарядитесь положительным настроением. Подарите себе мгновения истинного расслабления и восстановления    
-                            </p>
-
-                            <div class="services__item-prices">
-                                <div class="services__item-prices-item">
-                                    <span></span>
-                                    <span>1 сеанс - 700 (600*)</span>
-                                    <span class="services__item-prices-annotation">*при покупке любого абонемента на курс массажа</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="services__item-img combined"></div>
-                    </div>
+                    <p class="item-name">Михаил</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="masters container-padding" id="masters">
-            <div class="container masters__container">
-                <h2 class="masters__title container-title">Наши мастера</h2>
+    <section class="about container-padding" id="about">
+        <div class="container about__container">
+            <h2 class="about__title container-title">О СТУДИИ</h2>
 
-                <div class="masters__items">
-                    <div class="masters__item">
-                        <img class="item-img" src="/src/assets/photos/master.png" alt="">
-        
-                        <p class="item-name">Имя Фамилия</p>
-                    </div>
-                    <div class="masters__item">
-                        <img class="item-img" src="/src/assets/photos/master.png" alt="">
-        
-                        <p class="item-name">Имя Фамилия</p>
-                    </div>
-                    <div class="masters__item">
-                        <img class="item-img" src="/src/assets/photos/master.png" alt="">
-        
-                        <p class="item-name">Имя Фамилия</p>
-                    </div>
-                    <div class="masters__item">
-                        <img class="item-img" src="/src/assets/photos/master.png" alt="">
-        
-                        <p class="item-name">Имя Фамилия</p>
-                    </div>
+            <div class="about__row">
+                <div class="about__left">
+                    <p class="about__par">
+                        В нашей студии массажа мы заботимся о вашем здоровье и комфорте. Понимая, что массаж может иметь
+                        различные противопоказания,
+                        мы начинаем каждую сессию с консультации специалиста. Это позволяет индивидуально оценить
+                        состояние каждого
+                        клиента и учесть все абсолютные, временные или локальные противопоказания.
+                    </p>
+
+                    <p class="about__par">
+                        Основная задача массажа — это не только расслабление, но и лечение болезненных мышечных
+                        состояний,
+                        а также снижение уровня тревоги. Мы предлагаем широкий спектр массажных техник, которые помогут
+                        вам восстановить физическое и эмоциональное равновесие.
+                    </p>
+
+                    <p class="about__par">
+                        Особое внимание мы уделяем косметическому массажу, который стал незаменимым помощником на пути к
+                        телу мечты.
+                        Он способствует сохранению красоты и здоровья как лица, так и всего тела.
+                    </p>
+
+                    <p class="about__par">
+                        ✨ Приходите к нам, и мы с радостью продемонстрируем, как массаж может изменить вашу жизнь к
+                        лучшему.
+                        Подарите себе гармонию и заботу о своём теле! 💖
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+</main>
 
-        <section class="certificates container-padding" id="certificates">
-            <div class="container certificates__container">
-                <h2 class="certificates__title container-title">СЕРТИФИКАТЫ</h2>
-                
-                <div class="certificates__row">
-                    <div class="certificates__left">
-                        <p class="certificates__text">
-                            Хотите сделать незабываемый подарок? Подарочный сертификат – идеальный выбор! 
-                            С ним ваши друзья и близкие смогут выбрать то, что им действительно нужно и понравится.
-                        </p>
-    
-                        <button class="button button--order">Заказать сертификат</button>
-                    </div>
-    
-                    <div class="certificates__right">
-                        <img src="/src/assets/photos/cert.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+<footer class="footer">
+    <div class="container footer__container">
+        <img src="/src/assets/icons/logo-black.svg" alt="">
 
-        <section class="about container-padding" id="about">
-            <div class="container about__container">
-                <h2 class="about__title container-title">О СТУДИИ</h2>
+        <div class="footer__row">
+            <h3 class="footer__title">Ваше здоровье - наша забота</h3>
 
-                <div class="about__row">
-                    <div class="about__left">
-                        <p class="about__par">
-                            В нашей студии массажа мы заботимся о вашем здоровье и комфорте. Понимая, что массаж может иметь различные противопоказания, 
-                            мы начинаем каждую сессию с консультации специалиста. Это позволяет индивидуально оценить состояние каждого 
-                            клиента и учесть все абсолютные, временные или локальные противопоказания.
-                        </p>
-
-                        <p class="about__par">
-                            Основная задача массажа — это не только расслабление, но и лечение болезненных мышечных состояний, 
-                            а также снижение уровня тревоги. Мы предлагаем широкий спектр массажных техник, которые помогут 
-                            вам восстановить физическое и эмоциональное равновесие. 
-                        </p>
-
-                        <p class="about__par">
-                            Особое внимание мы уделяем косметическому массажу, который стал незаменимым помощником на пути к телу мечты. 
-                            Он способствует сохранению красоты и здоровья как лица, так и всего тела.
-                        </p>
-
-                        <p class="about__par">
-                            ✨ Приходите к нам, и мы с радостью продемонстрируем, как массаж может изменить вашу жизнь к лучшему. 
-                            Подарите себе гармонию и заботу о своём теле! 💖
-                        </p>
-                    </div>
-
-                    <div class="about__right">
-                        <!--  -->
-                    </div>
-                </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer__container">
-            <img src="/src/assets/icons/logo-black.svg" alt="">
-
-            <div class="footer__row">
-                <h3 class="footer__title">Ваше здоровье - наша забота</h3>
-
-                <nav class="footer__nav">
+            <nav>
+                <ul class="footer__nav">
                     <li>
                         <a href="#services">Виды массажа</a>
                     </li>
@@ -523,19 +637,54 @@
                     <li>
                         <a href="#about">О студии</a>
                     </li>
-                </nav>
+                </ul>
+            </nav>
 
-                <div class="footer__contacts">
-                    <p class="footer__contacts-item contact-time">Время работы: с 10:00 до 22:00</p>
-                    <a class="footer__contacts-item contact-phone" href="">+7 (999) 845-11-05</a>
-                    <a class="footer__contacts-item contact-instagram" href="">s_dushoy_k_telu</a>
-                    <a class="footer__contacts-item contact-vk" href="">vk.com/sdktpodolsk</a>
-                </div>
+            <div class="footer__contacts">
+                <p class="footer__contacts-item contact-time">Время работы: с 10:00 до 22:00</p>
+                <a class="footer__contacts-item contact-phone" href="">+7 (999) 845-11-05</a>
+                <a class="footer__contacts-item contact-instagram" href="">s_dushoy_k_telu</a>
+                <a class="footer__contacts-item contact-vk" href="">vk.com/sdktpodolsk</a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script type="module" src="/src/main.ts"></script>
+<div class="modal">
+    <div class="modal__wrapper">
+        <div class="modal__content" data-type="master-1">
+            <div class="modal__close">Закрыть</div>
+
+            Описание мастера
+        </div>
+
+        <div class="modal__content" data-type="master-2">
+            <div class="modal__close">Закрыть</div>
+
+            Описание мастера
+        </div>
+
+        <div class="modal__content" data-type="master-3">
+            <div class="modal__close">Закрыть</div>
+
+            Описание мастера
+        </div>
+
+        <div class="modal__content" data-type="master-4">
+            <div class="modal__close">Закрыть</div>
+
+            Описание мастера
+        </div>
+
+        <div class="modal__content" data-type="service-1">
+            <div class="modal__close">Закрыть</div>
+
+            Описание услуги
+        </div>
+    </div>
+</div>
+
+<script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
